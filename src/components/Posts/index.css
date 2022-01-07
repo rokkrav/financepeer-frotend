@@ -1,0 +1,31 @@
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.posts-heading {
+  color: #3f4345;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.posts-list {
+  padding: 32px;
+}
+
+.each-list-item {
+  list-style-type: none;
+  background-color: #c0e4fa;
+  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.each-item-style {
+  color: #000000;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+}

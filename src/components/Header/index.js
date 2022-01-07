@@ -14,7 +14,7 @@ const Header = props => {
   return (
     <nav className="nav-header">
       <div className="nav-content">
-        <h1>F</h1>
+        <h1 className="header-heading">Financepeer</h1>
         <button type="button" className="logout-btn" onClick={onClickLogout}>
           Logout
         </button>

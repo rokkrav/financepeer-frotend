@@ -64,6 +64,7 @@ class LoginForm extends Component {
     }
     return (
       <div className="login-form-container">
+        <h1 className="login-heading">FINANCEPEER</h1>
         <form className="form-container" onSubmit={this.submitForm}>
           <div className="input-container">
             <label className="input-label" htmlFor="username">

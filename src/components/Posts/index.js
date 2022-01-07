@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import Header from '../Header'
 
 import './index.css'
 
@@ -33,22 +34,25 @@ class Posts extends Component {
     const {isLoading, postsList} = this.state
 
     return (
-      <div>
-        <p>Posts</p>
-        {isLoading ? (
-          <p>Loading...</p>
-        ) : (
-          <ul>
-            {postsList.map(each => (
-              <li key={each.id}>
-                <p>{each.userId}</p>
-                <p>{each.title}</p>
-                <p>{each.body}</p>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
+      <>
+        <Header />
+        <div className="posts-container">
+          <p className="posts-heading">Posts</p>
+          {isLoading ? (
+            <p>Loading...</p>
+          ) : (
+            <ul className="posts-list">
+              {postsList.map(each => (
+                <li key={each.id} className="each-list-item">
+                  <p className="each-item-style">user: {each.userId}</p>
+                  <p className="each-item-style">{each.title}</p>
+                  <p className="each-item-style">{each.body}</p>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </>
     )
   }
 }
